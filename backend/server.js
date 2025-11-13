@@ -53,11 +53,7 @@ console.log('✅ Gemini API client initialized:', !!client);
 
     // TODO: Return the chatbot response
     // For now, return a placeholder response
-    const placeholderResponse = {
-      response: 'This is a placeholder response. Implement Gemini API integration here.'
-    };
-
-    res.json(placeholderResponse);
+    res.json({ response: responseText });
   } catch (error) {
     console.error('Error in chat endpoint:', error);
     res.status(500).json({ error: 'Internal server error' });
